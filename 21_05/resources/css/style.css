@@ -250,29 +250,69 @@ nav a.subnavlink {
     opacity: 0.7;
 }
 
+#MSearchBox {
+    white-space: nowrap;
+    position: unset;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 200px;
+    margin-right: 100px;
+    display: inline-flex;
+    align-items: center;
+}
+
+#MSearchBox .left {
+    display: flex;
+    align-items: center;
+    position: unset;
+    width: unset;
+    height: unset;
+}
+
+#MSearchBox .right {
+    display: block;
+    height: 100%;
+}
+
+#MSearchResultsWindow.MSearchResultsWindowStyle {
+    top: 60px !important;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+@media screen and (max-width: 960px) {
+    #MSearchResultsWindow.MSearchResultsWindowStyle {
+        top: 160px !important;
+    }
+}
+
 nav.ui-front {
     float: right;
     padding-right: 2em;
     padding-top: 0.6em;
     color: #FFF;
 }
-#searchbox {
+
+#MSearchField.searchbox {
     background-color: transparent;
+    position: unset;
     border: none;
     border-bottom: #7395A0 solid 2px;
     height: 1.5em;
     font-size: 18px;
-    padding-left: 1.5em;
+    /* padding-left: 1.5em; */
     width: 13em;
     color: #00414d;
     float: right;
     padding-top: 0.3em;
-    font-weight: 500;
+    font-weight: 500; 
 }
-#searchbox:before{
-         content: "\f002";
+
+#MSearchField.searchbox:before{
+    content: "\f002";
 }
-#searchbox:focus {
+
+#MSearchField.searchbox:focus {
     outline: none;
     border-bottom: #F7781E solid 2px;
 }
