@@ -82,7 +82,7 @@ Update Service</h2>
 <li>Remove App -- <b>Removes the named application.</b> This is the only update command that doesn't have any data files associated with it.</li>
 <li>Update Firmware -- Update the firmware of an attached hardware device. For example the cellular modem found in wireless modules. On systems without a firmware portion, like the virtual platform, this command is unsupported.</li>
 </ul>
-<dl class="section note"><dt>Note</dt><dd>On Sierra Wireless modules, firmware level updates can include replacement copies of whole partition file systems. It is possible to replace the "Base" version of Legato this way. See legatoServicesUpdate_Base for more details on this. It is also possible to create a <code></code>.cwe file that instructs the modem to erase and reformat the user data partition allowing the user to create an update that takes their module back to a factor default state.</dd>
+<dl class="section note"><dt>Note</dt><dd>On Sierra Wireless modules, firmware level updates can include replacement copies of whole partition file systems. It is possible to replace the "Base" version of Legato this way. See legatoServicesUpdate_Base for more details on this. It is also possible to create a <code></code>.cwe file that instructs the modem to erase and reformat the user data partition allowing the user to create an update that takes their module back to a factory default state.</dd>
 <dd>
 On Sierra Wireless modules when firmware updates are installed a full reboot of the module will be triggered. For system updates only the runtime environment will be restarted.</dd></dl>
 <h2><a class="anchor" id="legatoServicesUpdate_APIs"></a>
